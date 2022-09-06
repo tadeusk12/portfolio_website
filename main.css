@@ -1,0 +1,89 @@
+body {
+    background:  #f5f7fa;
+}
+
+h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1;
+    color:#262821} 
+h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+    color:#3D4034}
+h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+color:#4D5042}
+h4 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+color:#4D5042}
+p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+
+html {
+    scroll-behavior: smooth;
+  }
+/* navbar */
+.navbar {
+    background: white;
+}
+.nav-link {
+    color:black;
+}
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.navbar-brand:hover {
+    color: #C1C4B7;
+}
+.nav-link:hover {
+    color: #E0E1DB;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* intro */
+#intro {
+    display: table;
+}
+
+#intro_p {display: table-cell; vertical-align: middle;}
+
+/* body */
+.features {
+	margin: 4em auto;
+	padding: 1em;
+	position: relative;
+}
+.feature-title {
+	color: #415C8B;
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.features img {
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+	margin-bottom: 16px;
+}
+
+/* project */
+.project-section {
+    background-color:white;
+}
+
+.project-pic:hover {
+    color:grey
+}
+
+/* footer */
+.page-footer {
+    background-color: black;
+    color: white;
+    padding: 60px 0 30px;
+}
+.footer-copyright {
+    color: black;
+    padding: 40px 0;
+}
