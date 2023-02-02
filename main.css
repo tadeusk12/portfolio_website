@@ -2,21 +2,44 @@ body {
     background:  #f5f7fa;
 }
 
-h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1;
+h1 { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 34px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1;
     color:#262821} 
-h2 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+h2 { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 28px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
     color:#262821}
-h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+h3 { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
 color:#262821}
-h4 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
+h4 {font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 16px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 1.5; 
 color:#262821}
-p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
-blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
-pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
-li { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+p { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+blockquote { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+pre { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
+li { font-family: "Helvetica Neue", Helvetica, Verdana, Geneva, Tahoma, sans-serif, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.5; }
 
 html {
     scroll-behavior: smooth;
+  }
+
+#toggle-text {
+    display: none;
+  }
+  
+#toggle-logo {
+    height: 1.2em;
+    display: inline-block;
+  }
+
+#toggle-container {
+    display: flex;
+    align-items: center;
+  }
+  
+button {
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    padding: 0;
+
+
   }
 /* navbar */
 .navbar {
@@ -80,15 +103,26 @@ html {
 	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 	margin-bottom: 16px;
+    border-radius: 25px;
 }
 
+.desc {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+      
+.wrapper:hover .desc {
+    display: block;
+  }
 /* project */
 .project-section {
-    background-color: white;
+    background-color: #f5f7fa;
 }
 
-
-#project-image:hover {
+.project-image:hover {
     opacity:0.5;
 }
 
@@ -101,7 +135,6 @@ html {
 /* footer */
 .page-footer {
     background-color: white;
-    color: white;
     padding: 60px 0 30px;
 }
 .footer-copyright {
