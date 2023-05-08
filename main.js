@@ -23,3 +23,12 @@ toggleButton.addEventListener("click", function() {
     toggleLogo.setAttribute("src", "your-logo.png");
   }
 });
+
+function expandCard(card) {
+  var expandedContent = card.querySelector(".expanded-content");
+  if (expandedContent.style.display === "none") {
+    expandedContent.style.display = "block";
+  } else {
+    expandedContent.style.display = "none";
+  }
+}
