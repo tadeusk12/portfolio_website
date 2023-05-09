@@ -193,4 +193,32 @@ button {
     color: black;
     padding: 40px 0;
 }
+footer {
+    padding-top: 15px;
+    background-color: #f8f9fa;
+    padding: 50px 0;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #343a40;
+    border: none;
+    border-radius: 0;
+  }
+  
 
