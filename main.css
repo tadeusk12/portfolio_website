@@ -146,10 +146,12 @@ button {
     padding: 20px;
     text-align: center;
     height: 400px;
+    word-wrap: break-word; /* Ensure long words are broken and wrap onto the next line */
+    overflow: hidden; /* Hide any content that exceeds the card's boundaries */
   }
   .card-img-top {
     max-width: 100%;
-    max-height: 80%;
+    max-height: 50%;
     height: auto;
     object-fit: cover;
   }
